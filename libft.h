@@ -6,7 +6,7 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 19:37:51 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/11 20:33:34 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/21 23:34:46 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
-
+#include <fcntl.h>
 int ft_isalpha(int i);
 int ft_isdigit(int i);
 int ft_isalnum(int i);
@@ -40,9 +40,14 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t ft_strlcpy(char * dst, const char * src, size_t dstsize);
 size_t ft_strlcat(char *dst, const char *src, size_t dstsize);
 char *ft_substr(char const *s, unsigned int start,size_t len);
-char *ft_substr(char const *s, unsigned int start,size_t len);
-
-
-
+char *ft_strjoin(char const *s1, char const *s2);
+char *ft_strtrim(char const *s1, char const *set);
+void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
+void ft_putendl_fd(char *s, int fd);
+void ft_striteri(char *s, void (*f)(unsigned int, char *));
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char **ft_split(char const *s, char c);
+void ft_putnbr_fd(int n, int fd);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 17:47:08 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/12 19:00:17 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/19 01:01:37 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,26 @@ size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t  i;
 	size_t j;
+	size_t res;
 	i = 0;
-	if (dstsize == 0)
-		return(0);
+	if(!dst && !dstsize)
+	return(0);
 	j = ft_strlen(dst);
-	if(dstsize > j)
+	if(j < dstsize)
+		res = j + ft_strlen(src);
+	else
 	{
-		while(src[i] && j < dstsize - 1)
-		{
-			dst[j] = src[i];
-			i++;
-			j++;
-		}
-		dst[j] = '\0';
-		return(ft_strlen(dst) + ft_strlen(src + i));
+		res = ft_strlen(src) + dstsize;
+		return(res);
 	}
-	return(dstsize + ft_strlen(src));
+	while (src[i] != 0 && j < (dstsize - 1))
+	{
+		dst[j] = src[i];
+		i++;
+		j++;
+	}
+	dst[j] = '\0';
+	return(res);
 }
 
 /*int main(int ac, char **av)

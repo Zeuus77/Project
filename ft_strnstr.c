@@ -6,7 +6,7 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 19:34:52 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/11 20:42:30 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/21 21:56:10 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 		while(needle[j] && haystack[i + j] == needle[j] && i + j < len )
 		{	
 			j++;
-			if (j == ft_strlen(needle))
+				if (j == ft_strlen(needle))
 				return ((char *)&haystack[i]);			
 		}
 		i++;
@@ -38,10 +38,7 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 		
 }
-/*int main(int ac, char **av)
-{
-	char haystack[] = "oussama";
-	char needle[] = "ss";
-	printf("%s\n", ft_strnstr(av[1], av[2], atoi(av[3])));
-	return 0;
-}*/
+//int main()
+//{
+//	printf("%s",ft_strnstr("haystack","a",-1));
+//}
