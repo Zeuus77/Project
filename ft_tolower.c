@@ -6,19 +6,19 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 21:59:01 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/05 18:01:29 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:26:48 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	if(c >= 65 && c <= 90 )
+	if (c >= 65 && c <= 90)
 	{
-	c += 32;
+		c += 32;
 	}
 	return (c);
-
 }
+
 /*
 int main()
 {

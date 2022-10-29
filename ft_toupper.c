@@ -6,19 +6,21 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 22:22:26 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/05 18:01:39 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:26:51 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-int ft_toupper(int c)
+#include <stdio.h>
+
+int	ft_toupper(int c)
 {
-	if( c >= 97   && c <= 122 )
+	if (c >= 97 && c <= 122)
 	{
 		c -= 32;
 	}
-	return(c);
+	return (c);
 }
+
 /*
 int main()
 {

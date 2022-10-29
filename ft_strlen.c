@@ -6,18 +6,20 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 21:54:49 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/10 17:25:55 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:25:35 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-	size_t i = 0;
+	size_t	i;
+
+	i = 0;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
-	return(i);
+	return (i);
 }

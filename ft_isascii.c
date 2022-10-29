@@ -6,14 +6,14 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 21:48:28 by youel-id          #+#    #+#             */
-/*   Updated: 2022/09/30 21:49:28 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/24 21:30:40 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	if( c >= 0 && c <= 127)
-		return(1);
+	if (c >= 0 && c <= 127)
+		return (1);
 	else
-		return(0);
+		return (0);
 }

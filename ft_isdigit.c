@@ -6,14 +6,14 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 21:50:06 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/01 22:14:07 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:17:08 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit( int i)
+int	ft_isdigit(int i)
 {
-	if( i >= '0' && i <= '9')
-		return(1);
+	if (i >= '0' && i <= '9')
+		return (1);
 	else
-		return(0);
+		return (0);
 }

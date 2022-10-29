@@ -6,16 +6,20 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 23:08:25 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/20 23:01:30 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/24 21:38:36 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
-void *ft_memset(void* b, int c, size_t len)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t i = 0;
-	char* d = (char*)b;
-	while(i < len)
+	size_t	i;
+	char	*d;
+
+	i = 0;
+	d = (char *)b;
+	while (i < len)
 	{
 		d[i] = (unsigned char)c;
 		i++;

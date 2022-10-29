@@ -6,25 +6,25 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 19:16:18 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/05 18:00:14 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/24 21:27:10 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include<stdio.h>
 #include<string.h>
-void ft_bzero(void *s, size_t n)
+
+void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	char *b = (char *)s;
+	size_t	i;
+	char	*b;
+
+	b = (char *)s;
 	i = 0;
 	while (i < n)
 	{
 		b[i] = '\0';
 		i++;
-		}
-
-		
+	}
 }
 /*int main()
 {

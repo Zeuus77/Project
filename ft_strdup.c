@@ -6,19 +6,21 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:46:54 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/08 19:03:45 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:15:45 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
-char *ft_strdup(const char *s1)
+#include "libft.h"
+
+char	*ft_strdup(const char *s1)
 {
-	char *str;
+	char	*str;
+
 	str = ((char *)malloc(ft_strlen(s1) + 1));
-	if(!str)
+	if (!str)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	ft_memcpy(str,s1, ft_strlen(s1)+1);
-		return(str);
+	ft_memcpy(str, s1, ft_strlen(s1) + 1);
+	return (str);
 }

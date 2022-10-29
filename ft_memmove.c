@@ -6,40 +6,38 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 22:25:03 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/10 17:57:06 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/29 18:40:03 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<string.h>
 #include<stdio.h>
-void *ft_memmove(void *dst, const void *src, size_t len)
+
+#include "libft.h"
+
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char *s;
-	char *d;
+	size_t				i;
+	const unsigned char	*s;
+	unsigned char		*d;
 
-	if (!dst && !src)
-		return (0);
-	s = (char *)src;
-	d = (char *)dst;
-	size_t i = 0;
-	while( i < len)
+	i = len;
+	s = src;
+	d = dst;
+	if (s == NULL && d == NULL)
+		return (d);
+	if (s > d)
+		ft_memcpy(d, s, len);
+	if (s < d)
 	{
-		if(d <= s)
+		while (i > 0)
 		{
+			i--;
 			d[i] = s[i];
-			i++;
 		}
-		else if( d > s )
-		{
-			d[len - 1 - i] = s [len - 1 - i];
-			i++;
-		}
-		
 	}
-	return(dst);
+	return (d);
 }
-
-
 /*int main()
 {
 	char src[]="abcde";
@@ -48,4 +46,3 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	printf("%s\n",memmove(src2 +2,src2, 3));
 	return (0);
 }*/
-

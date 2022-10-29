@@ -6,7 +6,7 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 16:19:45 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/18 19:48:31 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:25:05 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int i;
+	int	i;
+
 	i = 0;
-	if(s)
+	if (s)
 	{
-	while (s[i])
-	{
-		f(i, &s[i]);
-		i++;
-	}
+		while (s[i])
+		{
+			f(i, &s[i]);
+			i++;
+		}
 	}
 }

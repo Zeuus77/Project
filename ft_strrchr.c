@@ -6,26 +6,29 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 01:58:35 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/21 21:21:55 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/29 18:23:40 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include"libft.h"
-#include<stdio.h>
-
-char* ft_strrchr( const char *s,int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    int i = ft_strlen(s);
-    while(i >= 0 )
-    {
-        if(s[i] == c)
-            return((char*)&s[i]);
-        i--;
-    }
-    return NULL;
-}
+	int	len;
+	int	i;
 
+	len = ft_strlen((char *)s);
+	i = 0;
+	while (len >= i)
+	{
+		if (s[len] == (char)c)
+		{
+			return ((char *)(s + len));
+		}
+		len--;
+	}
+	return (0);
+}
 /*int main()
 {
     char* i = "youssef";

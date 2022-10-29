@@ -6,14 +6,14 @@
 /*   By: youel-id <youel-id@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 21:52:32 by youel-id          #+#    #+#             */
-/*   Updated: 2022/10/01 22:14:07 by youel-id         ###   ########.fr       */
+/*   Updated: 2022/10/24 21:32:46 by youel-id         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(c)
+int	ft_isprint(int c)
 {
-	if(c >= 32 && c <= 126)
-		return(1);
+	if (c >= 32 && c <= 126)
+		return (1);
 	else
-		return(0);
+		return (0);
 }
